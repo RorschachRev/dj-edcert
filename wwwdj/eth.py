@@ -27,6 +27,7 @@ class BC():
 			self.network_id=3
 
 # TODO: Add Blockchain Queries
+# https://web3py.readthedocs.io/en/stable/index.html
 def main():
 	resp= BC()
 	w3 = resp.w3
