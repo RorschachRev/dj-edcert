@@ -2,8 +2,7 @@ from argparse import RawTextHelpFormatter
 from django.contrib.auth.models import Group, Permission
 from django.core.management import BaseCommand
 
-# TODO:
-# Create user groups as well as group-based permissions
+# TODO: Create user groups as well as group-based permissions
 class Command(BaseCommand):
 	"""
 	This command creates user groups on new instances of the sqlite database.
@@ -34,8 +33,7 @@ class Command(BaseCommand):
 		self.stdout.write(self.style.SUCCESS('\n  Done'))
 		self.stdout.write('\nAdding Permissions...')
 
-		# TODO:
-		# Decide which groups have what permissions
+		# TODO: Decide which groups have what permissions
 		for g in groups:
 			self.stdout.write('\n%s' % (g.name))
 			for p in permissions:

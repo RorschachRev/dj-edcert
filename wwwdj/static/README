@@ -1,0 +1,1 @@
+Write custom css/javascript in this file, then use ./manage.py collectstatic for deployment.

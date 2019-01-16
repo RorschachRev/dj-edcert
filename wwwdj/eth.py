@@ -26,9 +26,11 @@ class BC():
 			self.w3 = Web3(Web3.WebsocketProvider("wss://ropsten.infura.io/_ws"))
 			self.network_id=3
 
+# TODO: Add Blockchain Queries
 def main():
 	resp= BC()
 	w3 = resp.w3
+	print('Block Number: %s' % (w3.eth.blockNumber))
 
 if __name__ == '__main__':
 	main()

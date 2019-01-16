@@ -4,7 +4,7 @@ from django.dispatch import receiver
 from django.contrib.auth.models import User
 
 # User Model Extension
-# TODO:
+# TODO: Create Project Models
 # Add fields relevant to a user's Profile
 # 	(user_type, area_of_study, phone_number, etc.)
 class Profile(models.Model):
